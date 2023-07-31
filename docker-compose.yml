@@ -1,4 +1,3 @@
----
 version: '3'
 
 services:
@@ -22,15 +21,15 @@ services:
       CONCOURSE_POSTGRES_PASSWORD: concourse_pass
       CONCOURSE_POSTGRES_DATABASE: concourse
       # replace this with your external IP address
-      CONCOURSE_EXTERNAL_URL: http://concourse:8080
+      CONCOURSE_EXTERNAL_URL: http://concourse.localtest.me:8080
       CONCOURSE_ADD_LOCAL_USER: admin:admin
       CONCOURSE_MAIN_TEAM_LOCAL_USER: admin
-      # insted of relying on the default "detect"
+      # instead of relying on the default "detect"
       CONCOURSE_WORKER_BAGGAGECLAIM_DRIVER: overlay
-      CONCOURSE_X_FRAME_OPTIONS: allow
-      CONCOURSE_CONTENT_SECURITY_POLICY: "*"
-      CONCOURSE_CLUSTER_NAME: "Testing Concourse!"
-      CONCOURSE_WORKER_CONTAINERD_DNS_SERVER: "8.8.8.8"
-      CONCOURSE_WORKER_RUNTIME: "containerd"
       CONCOURSE_CLIENT_SECRET: Y29uY291cnNlLXdlYgo=
       CONCOURSE_TSA_CLIENT_SECRET: Y29uY291cnNlLXdvcmtlcgo=
+      CONCOURSE_X_FRAME_OPTIONS: allow
+      CONCOURSE_CONTENT_SECURITY_POLICY: "*"
+      CONCOURSE_CLUSTER_NAME: arm64
+      CONCOURSE_WORKER_CONTAINERD_DNS_SERVER: "8.8.8.8"
+      CONCOURSE_WORKER_RUNTIME: "containerd"
