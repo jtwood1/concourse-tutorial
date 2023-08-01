@@ -2,7 +2,7 @@
 
 set -e
 
-# install required dependency
+# install required gcc dependency
 apk add build-base
 
 # task script is in resource-tutorial/job-inputs/ folder
