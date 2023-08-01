@@ -2,6 +2,9 @@
 
 set -e
 
+# install required dependency
+apk add build-base
+
 # task script is in resource-tutorial/job-inputs/ folder
 # application input is in gopath/src/github.com/cloudfoundry-community/simple-go-web-app folder
 # $GOPATH is gopath/ folder
